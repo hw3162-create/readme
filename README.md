@@ -39,14 +39,12 @@ This study will examine how participation in an online undergraduate course rela
 | Design | Observational study of one course cohort |
 | Population | Students aged 18 or older enrolled in one selected online undergraduate course |
 | Planned sample | Approximately 100 consenting students; actual participation may differ |
-| Setting | [Institution, country, course, and LMS to be selected] |
 | Collection period | One 12-week teaching period; exact dates to be confirmed |
 | Unit of analysis | One student in one course |
 | Language | English |
 | File format | CSV, UTF-8 encoding, comma-separated, with a header row |
 | Version | 0.1 — proposal |
 | Updated | 2026-09-28 |
-| Funding | [Specify funding or confirm no external funding] |
 
 ## Metadata standard
 
