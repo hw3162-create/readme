@@ -46,121 +46,31 @@ This study will examine how participation in an online undergraduate course rela
 | Version | 0.1 — proposal |
 | Updated | 2026-09-28 |
 
-Example data — synthetic records
+## Sample data
 
-The following five records are invented solely to illustrate the proposed dataset structure. They do not represent real students, collected observations, or research findings. The planned research sample remains approximately 100 students.
+This project is currently at the proposal stage. The five synthetic records below illustrate the planned dataset structure. They do not represent real students or research findings. The planned sample is approximately 100 consenting students, and the observation period is 12 weeks (84 days).
 
-student_id
+Each row represents one student in one course. Student identifiers are fictional research codes.
 
-baseline_score
+| student_id | baseline_score | active_days | resource_views | discussion_posts | assignments_due | on_time_submissions | on_time_rate | final_exam_score |
+|---|---|---|---|---|---|---|---|---|
+| S0001 | 65.00 | 52 | 180 | 14 | 10 | 9 | 90.00 | 82.00 |
+| S0002 | 78.00 | 38 | 125 | 8 | 10 | 8 | 80.00 | 85.00 |
+| S0003 | 54.00 | 61 | 240 | 20 | 10 | 10 | 100.00 | 76.00 |
+| S0004 | 72.00 | 27 | 88 | 0 | 10 | 6 | 60.00 | 79.00 |
+| S0005 | NA | 45 | 156 | 11 | 8 | 7 | 87.50 | NA |
 
-active_days
+### Interpretation
 
-resource_views
+- Assessment scores and submission rates are percentages ranging from 0 to 100.
+- `active_days` counts distinct days with qualifying LMS activity and cannot exceed 84.
+- `resource_views` and `discussion_posts` count activity during the observation period.
+- `assignments_due` excludes optional or waived assignments, so the number may vary between students.
+- `on_time_rate` is calculated as `100 × on_time_submissions / assignments_due`.
+- `NA` indicates missing or unavailable information. A zero indicates an observed value of zero.
+- For S0005, seven on-time submissions out of eight required assignments produce an on-time rate of 87.50%.
 
-discussion_posts
-
-assignments_due
-
-on_time_submissions
-
-on_time_rate
-
-final_exam_score
-
-S0001
-
-65.00
-
-52
-
-180
-
-14
-
-10
-
-9
-
-90.00
-
-82.00
-
-S0002
-
-78.00
-
-38
-
-125
-
-8
-
-10
-
-8
-
-80.00
-
-85.00
-
-S0003
-
-54.00
-
-61
-
-240
-
-20
-
-10
-
-10
-
-100.00
-
-76.00
-
-S0004
-
-72.00
-
-27
-
-88
-
-0
-
-10
-
-6
-
-60.00
-
-79.00
-
-S0005
-
-NA
-
-45
-
-156
-
-11
-
-8
-
-7
-
-87.50
-
-NA
-
-In this illustration, S0004 has zero recorded discussion contributions. S0005 has unavailable baseline and final exam scores, represented by NA. S0005 also illustrates a different number of required assignments; the submission rate uses that student's own denominator.
-
-These records demonstrate formatting and calculation conventions only. They should not be used to draw conclusions about engagement and academic performance.
+These examples demonstrate the proposed format and calculation rules only. No conclusions about student learning or academic performance should be drawn from these synthetic records.
 ## Metadata standard
 
 **Selected standard: Data Documentation Initiative — DDI-Codebook (DDI-C).**
